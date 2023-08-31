@@ -102,9 +102,9 @@ export default function page({ params }: { params: { id: string } }) {
                   </span>
                 </div>
                 <div className='gap-12 collapse-content'>
-                  <div className='flex gap-x-2 max-w-2xl'>
+                  <div className='flex flex-col items-center lg:flex-row gap-x-2 max-w-2xl'>
                     <Image
-                      className='rounded-lg'
+                      className='rounded-lg mb-4'
                       width={300}
                       height={300}
                       alt={episode.title}
