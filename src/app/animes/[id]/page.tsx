@@ -76,7 +76,7 @@ export default function page({ params }: { params: { id: string } }) {
   }, [])
 
   return (
-    <main className='mx-[400px]'>
+    <main className='mx-12'>
       {anime && (
         <div className='flex flex-col items-center'>
           <h1 className='text-3xl mt-20 text-center'>{anime.title}</h1>
@@ -121,7 +121,7 @@ export default function page({ params }: { params: { id: string } }) {
       <div className='flex justify-center my-8'>
         <PageNavigator disabledPrevious={previousPage} disabledNext={nextPage} previous={previous} next={next} />
       </div>
-      <form className='flex flex-col'>
+      <form className='flex flex-col lg:px-64'>
         <h2 className='mb-2'>Comments: </h2>
         <input
           className='input input-bordered max-w-xs my-4'
